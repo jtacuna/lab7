@@ -39,6 +39,7 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 app.get('/project/:id', project.view);
 // Example route
+app.get('/viewAlt', index.viewAlt);
 // app.get('/users', user.list);
 
 http.createServer(app).listen(app.get('port'), function(){
